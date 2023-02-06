@@ -1,0 +1,42 @@
+// .mat-icon{
+//     margin-right: 1rem; 
+//     vertical-align: center;
+// }
+// .mat-divider{
+//     border-top-width:2px ;
+//     border-color:white;
+// }
+// .mat-list-item{
+//     color: #94a3b8 !important;
+//     font-size: 0.8rem;
+//     height: 44px !important;
+//     margin-bottom: 4px;
+// }
+// .sidelistitem{
+
+//     margin-top: 2rem;}
+//     .logone{
+//     padding-top: 4px;}
+
+mat-sidenav-container {
+  height: 100%;
+  background-color: rgb(198, 192, 192);
+
+  mat-sidenav {
+    background-color: red;
+    padding-top: 2rem;
+  
+
+    mat-nav-list {
+      .menu-item {
+        margin-left: 8px;
+      }
+
+      .chevron-button {
+        transition: 300ms ease-in-out;
+        transform: rotate(0deg);
+      }
+    }
+  }
+  
+}

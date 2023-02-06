@@ -1,0 +1,43 @@
+
+<mat-sidenav-container autosize="true">
+    <mat-sidenav #sidenav mode="side" opened="isExpanded" (mouseover)="funcName1()" (mouseout)="funcName2()">
+      <mat-nav-list >
+  
+        <mat-list-item [routerLink]="'login'" *ngIf="isExpanded">
+          <mat-icon mat-list-icon *ngIf="isShown">perm_identity</mat-icon>
+          <span  class="menu-item" *ngIf="isShown" >Login</span>
+        </mat-list-item>
+        <mat-list-item [routerLink]="'search'"  *ngIf="isExpanded">
+            <mat-icon mat-list-icon  *ngIf="isShown">search</mat-icon> 
+            <span   *ngIf="isShown"class="menu-item">Search</span>
+        </mat-list-item>
+  
+        <mat-list-item [routerLink]="'home'">
+          <mat-icon mat-list-icon>home</mat-icon>
+          <span *ngIf="isExpanded" class="menu-item" style="margin-top: 10px;">Home</span>
+        </mat-list-item>
+  
+        <mat-list-item [routerLink]="'star'">
+            <mat-icon mat-list-icon>star</mat-icon>
+          <span *ngIf="isExpanded" class="menu-item">Star</span>
+        </mat-list-item>
+  
+        <mat-list-item [routerLink]="'music'">
+            <mat-icon mat-list-icon>music_video</mat-icon>
+          <span *ngIf="isExpanded" class="menu-item">Music</span>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="'film'">
+            <mat-icon mat-list-icon>local_movies</mat-icon>
+          <span *ngIf="isExpanded" class="menu-item">Film</span>
+        </mat-list-item>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    
+        <mat-sidenav-content class="maincontent">
+             <router-outlet></router-outlet> 
+          </mat-sidenav-content>    
+  </mat-sidenav-container>
+
+  
